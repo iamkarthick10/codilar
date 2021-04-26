@@ -1,0 +1,54 @@
+.box {
+    height : 350px;
+    width:280px;
+    color:#fff;
+    background-color: aqua;
+    position: relative;
+    top:150px;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size:400% 400%;
+    /* -webkit-animation: Gradient 5s ease infinite;
+    -moz-animation: Gradient 5s ease infinite; */
+     animation: Gradient 8s ease infinite;
+}
+
+
+  
+  @keyframes Gradient {
+    0% {
+    background-position: 0% 50%
+    }
+  50% {
+  background-position: 100% 50%
+  }
+  100% {
+  background-position: 0% 50%
+  }
+  }
+
+.buttonStart {
+    position: absolute;
+    bottom : 25px;
+    left: 50px;
+    background: linear-gradient(45deg, #1d0ac5, #04254b, #b9069c, #d1d1d1, #e0740e);
+    animation: Gradient 10s ease infinite;
+    background-size: 400% 400%;
+}
+.buttonStop {
+    position: absolute;
+    bottom : 25px;
+    right: 50px;
+    background: linear-gradient(45deg, #1d0ac5, #04254b, #b9069c, #d1d1d1, #e0740e);
+    animation: Gradient 5s ease infinite;
+    background-size: 400% 400%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+      background-color: lightblue;
+      height: 500px;
+    }
+  }
